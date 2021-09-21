@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "https://demosite.bluetechnology.com.tw/crd",
+    "secure": true,
+    "pathRewrite": {
+    },
+    "changeOrigin": true
+  }
+}
