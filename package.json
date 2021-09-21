@@ -1,5 +1,5 @@
 {
-  "name": "route-sample",
+  "name": "ng-seo-sample",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run route-sample:serve-ssr",
-    "serve:ssr": "node dist/route-sample/server/main.js",
-    "build:ssr": "ng build --prod && ng run route-sample:server:production",
-    "prerender": "ng run route-sample:prerender"
+    "dev:ssr": "ng run ng-seo-sample:serve-ssr",
+    "serve:ssr": "node dist/ng-seo-sample/server/main.js",
+    "build:ssr": "ng build --prod && ng run ng-seo-sample:server:production",
+    "prerender": "ng run ng-seo-sample:prerender"
   },
   "private": true,
   "dependencies": {

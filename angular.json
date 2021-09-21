@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "route-sample": {
+    "ng-seo-sample": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/route-sample/browser",
+            "outputPath": "dist/ng-seo-sample/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "route-sample:build"
+            "browserTarget": "ng-seo-sample:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "route-sample:build:production"
+              "browserTarget": "ng-seo-sample:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "route-sample:build"
+            "browserTarget": "ng-seo-sample:build"
           }
         },
         "test": {
@@ -117,18 +117,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "route-sample:serve"
+            "devServerTarget": "ng-seo-sample:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "route-sample:serve:production"
+              "devServerTarget": "ng-seo-sample:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/route-sample/server",
+            "outputPath": "dist/ng-seo-sample/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -149,21 +149,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "route-sample:build",
-            "serverTarget": "route-sample:server"
+            "browserTarget": "ng-seo-sample:build",
+            "serverTarget": "ng-seo-sample:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "route-sample:build:production",
-              "serverTarget": "route-sample:server:production"
+              "browserTarget": "ng-seo-sample:build:production",
+              "serverTarget": "ng-seo-sample:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "route-sample:build:production",
-            "serverTarget": "route-sample:server:production",
+            "browserTarget": "ng-seo-sample:build:production",
+            "serverTarget": "ng-seo-sample:server:production",
             "routes": [
               "/"
             ]
@@ -175,5 +175,5 @@
       }
     }
   },
-  "defaultProject": "route-sample"
+  "defaultProject": "ng-seo-sample"
 }
